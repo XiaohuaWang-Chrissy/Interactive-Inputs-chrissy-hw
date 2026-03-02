@@ -47,8 +47,11 @@ jobs:
         env:
           BASE_PATH: /${{ github.event.repository.name }}
 
+      - name: Add .nojekyll file
+        run: touch build/.nojekyll
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'build'
 
@@ -62,4 +65,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
