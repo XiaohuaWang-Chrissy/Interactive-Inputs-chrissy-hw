@@ -8,11 +8,14 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import CatDogCost from '$lib/components/CatCost.svelte';
+  import DogCost from '$lib/components/DogCost.svelte';
+
 
   // Article metadata
-  let headline = 'Become a force for good. Join our next class.';
-  let byline = 'NYCity News Service';
-  let pubDate = '2026-01-31';
+  let headline = 'Pet Ownership Statistics';
+  let byline = 'Written By Michelle Megna; Fact Checked By Korrena Bailie';
+  let pubDate = '2026-02-06';
 
   // Related stories
   const relatedStories = [
@@ -48,41 +51,37 @@ This is your page!
 
   <!-- Article Body: The main story text with proper typography -->
   <ArticleBody>
-    <p>
-      At the Craig Newmark Graduate School of Journalism at the City University of New York, change is in our DNA. That comes of being born in 2006, as the digital revolution was transforming our profession in ways none of us could have imagined.
-    </p>
+<p>Cost of Pet Ownership</p>
 
-    <p>
-      We fashioned a school to teach the latest storytelling, entrepreneurial, and technological skills alongside reporting, writing, and ethics. Beyond that, we’ve crafted a culture that spurns complacency, that isn’t afraid to pivot before the ground under us shifts.
-    </p>
+<p>While the love of a pet is priceless, the cost of owning one is not.</p>
+<p>Veterinary care, grooming, food, treats and other outlays can add up quickly.</p>
+<p>A Forbes Advisor analysis found that essential dog expenses cost an average of $1,533 annually.</p>
 
-    <p>
-      Our mission is to serve the public interest – by training new journalists from varied economic, racial, and cultural backgrounds who will bring much-needed diversity to newsrooms, by helping mid-career journalists retool their skills, and by partnering with other media organizations to find new paths to excellence.
-    </p>
+<p>This includes the cost of:</p>
 
-    <p>
-      Our low tuition rates, along with the added backing of private donors, allow candidates for our master’s degrees in journalism and engagement journalism to receive a world-class education at an affordable price. We also offer a unique bilingual master’s in journalism for students fluent in English and Spanish.
-    </p>
+<p>Dog boarding for a seven day vacation: $253</p>
+<p>Veterinary care: $679.50</p>
+<p>Pet insurance: $601.01</p>
 
-    <p>
-      Our three media centers provide research, training, thought leadership, industry meet-ups, and financial support for quality journalistic work.
-    </p>
+<p>Dog owners who rely on doggy day care twice per week can expect to spend an additional $2,980 per year on average.</p>
 
-    <p>
-      We also offer a robust professional education program through regular evening and weekend workshops. And we support in-depth reporting projects of professional journalists through fellowship grants.
-    </p>
+<p>And if an unexpected vet bill pops up for a major incident, you can be on the hook for thousands of dollars—42% of pet owners say they can't cover a surprise vet bill of $999 or less without going into debt.</p>
 
-    <p>
-      Classes are led by accomplished full-time faculty and adjuncts, who tap their networks to help students and graduates find internships, freelance opportunities and — the ultimate prize — jobs.
-    </p>
+<p>Pet insurance can partially reimburse you when you pay the bill for your pet's unexpected accidents and illnesses.</p>
+<p>While you may not want to add another expense to your pet care costs, you might be surprised at how affordable pet insurance can be.</p>
 
-    <p>
-      At a time when our profession is reeling from financial pressures and lack of trust, the Newmark Graduate School of Journalism is committed to producing the next generation of skilled, ethically minded, and diverse journalists.
-    </p>
+<p>The average pet insurance cost for dogs is $44 a month, and the average pet insurance cost for cats is $30 a month, based on Forbes Advisor's analysis.</p>
+<p>Having pet insurance is like putting a leash on your potential vet costs so they don't run out of control.</p>
+<p>That can leave you with more money to spend on spoiling your furry companion.</p>
 
-    <p>
-      We invite you to be part of our world.
-    </p>
+<p>Here's a closer look at the cost of pet ownership:</p>
+
+<p>Dog owners spend the most on veterinary care ($367 per year), food ($339 per year) and grooming ($99 per year).</p>
+<p>Cat owners spend the most on food ($310 per year), veterinary care ($253 per year) and toys ($50 per year).</p>
+<p>Gen Z pet owners (ages 18 to 25) are the most likely to spoil their pets with birthday cakes (34%), birthday presents (39%) and clothing or costumes (32%).</p>
+<p>Gen Z pet owners are also the most likely to spend money on behavioral training (41%), doggy daycare (35%), specialized pet food (44%) and dog walking services (31%).</p>
+<CatDogCost />
+<DogCost />
   </ArticleBody>
 
   <!-- Related Stories: Links to other articles -->
