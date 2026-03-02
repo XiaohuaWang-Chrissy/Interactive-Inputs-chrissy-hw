@@ -23,9 +23,9 @@ const config = {
     adapter: adapter({
       pages: 'build', // Output directory for HTML pages
       assets: 'build', // Output directory for static assets
-      fallback: undefined, // No fallback page (we're fully static)
+      fallback: 'index.html', // Fallback to index.html for SPA routing
       precompress: false, // Don't pre-compress files
-      strict: true, // Fail if any routes can't be prerendered
+      strict: false, // Allow routes that can't be prerendered
     }),
     // The base path is set via environment variable during build
     // This is configured automatically in .github/workflows/deploy.yml
